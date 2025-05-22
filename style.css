@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores e fontes da página */
+body {
+    background-color: #ffeef2;
+    color: #333;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff6b81;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    color: #ff6b81;
+    margin-bottom: 10px;
+}
+
+/* Lista dos motivos */
+.motivos {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.motivos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.motivos li {
+    background-color: #ffeef2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+}
+
+/* Mensagem final */
+.mensagem {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mensagem p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Imagem estilizada */
+.mensagem img {
+    display: block;
+    margin: 0 auto 25px;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 4px solid #ff69b4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.mensagem img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.6);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .motivos li {
+        font-size: 1rem;
+    }
+
+    .mensagem p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .motivos, .mensagem {
+        padding: 15px;
+    }
+}
